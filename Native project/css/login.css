@@ -1,0 +1,66 @@
+.login{background: url(../images/login-bj.jpg)no-repeat top center;position: relative;height: 1300px;}
+.login .table{position: relative;}
+/* 登录 */
+.login .user{width: 302px;height: 290px; border: 1px solid #E9E9E9;padding: 28px 42px;position: absolute;right: 0;top: 200px;}
+.login .user .tableheader{cursor: pointer;font-size:20px ;margin-left:15px ;margin-bottom: 25px;color: #482618;}
+.login .user .tableheader span:first-child{width: 151px;margin-right:4px ;}
+.login .user .tableheader span:last-child{width: 151px;color: #c9c9c9;}
+.login .user .ipt input{width: 290px;height: 36px;padding:  0 5px; border: 1px solid #efefef;border-radius: 2px;line-height: 38px;margin-bottom:12px;}
+.login .user .ipt input,input:focus{border:1px solid #efefef;}
+.login .user .ipt button{width: 302px;height: 48px;background-color:#442818; ;color: #ffffff;font-size: 18px;border-radius: 2px;line-height: 48px;cursor: pointer;margin-top: 25px;}
+.login .user .tongyi{margin-top: 20px;}
+.login .user .tongyi .tongyi2{position: relative;left: 55px;}
+.login .user .tongyi .tongyi1{position: relative;right: 60px;}
+/* 注册 */
+.zhuceAll{position: relative;}
+.zhuce{border: 1px solid #E9E9E9;padding: 28px 42px;position: absolute;top: 200px;height: 417px;right: 0;}
+.zhuce h2{text-align: center;}
+.zhuce ul li input{width: 290px;height: 36px;padding:  0 5px; border: 1px solid #efefef;border-radius: 2px;line-height: 38px;margin-bottom:12px;font-size: 12px;}
+.zhuce ul li:nth-child(4)>input{width:140px;border: 1px solid #E9E9E9;}
+.zhuce ul li .yanzheng{position: absolute; width: 140px;border: 1px solid #efefef;height: 36px;margin-left: 6px;text-align: center;line-height: 36px;background-color: #ffffff;border-radius: 2px;}
+.zhuce ul li button{width: 302px;height: 48px;background-color:#442818; ;color: #ffffff;font-size: 18px;border-radius: 2px;line-height: 48px;cursor: pointer;margin-top: 25px;}
+.zhuce .footer-ipt{margin-top: 15px;font-size: 12px;}
+.zhuce .footer-ipt a{font-size: 12px;}
+.zhuce .footer-ipt a:last-child{color: #2a99fa;}
+.zhuce .footer-ipt a:nth-last-child(2){color: #2a99fa;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

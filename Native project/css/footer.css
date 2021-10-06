@@ -1,0 +1,21 @@
+.bj{background-color: #333;margin-top: 150px;position: absolute;bottom: 0;width: 100%;}
+.footer .footerAll{height: 400px;overflow: hidden;padding-top:50px ;}
+.footer .footerAll .chlired{width: 230px;height: 256px; font-family: 'PingFang SC','Heiti SC','微软雅黑',Helvetica,Arial;font-size: 12px;}
+.footer .footerAll .chlired .logo{width: 96px;margin-bottom:15px;}
+.footer .footerAll .chlired {color:#B3B2B2;}
+.footer .footerAll .chlired  span{display: block;margin-bottom: 36px;color:#B3B2B2;}
+.footer .footerAll .chlired a{display: block;margin-bottom: 12px;}
+.footer .footerAll .chlired .weixiner1,.weixiner2{width: 150px;position: absolute;z-index: 6;top: 160px;left: 50px;display: none;}
+.footer .footerAll .chlired a:not(:only-child):last-of-type{margin-bottom: 0;}
+.footer .footerAll .chlired1 {width: 220px;margin: 0 65px 0 0}
+.footer .footerAll .chlired1 h5{font: 12px;color: #fff;margin: 11px 0 20px;}
+.footer .footerAll .chlired1 span{font-size:12px;color: #fff;}
+.footer .footerAll .chlired1 P{font-size:12px;color:#B3B2B2;text-align: justify;line-height: 17px;}
+.footer .footerAll .chlired1 a{display: block;margin: 10px 0 0 0;color: #fff;font-size: 12px;}
+.footer .footerAll .chlired2{width:220px;height: 221px;}
+.footer .footerAll .chlired2 p{margin-top:24px ;}
+.footer .footerAll .chlired2  p span{display: inline-block;;font-size:12px;color:#B3B2B2;text-align: justify;line-height: 17px;margin: 20px 0 0 0;}
+.footer .footerAll .chlired3{width: 400px;height: 250px;margin: 0;}
+.footer .footerAll .banquan{display: block;font-size:12px;color:#B3B2B2;text-align: justify;position: absolute;bottom: 0;text-align:center;border-top: 1px solid #8D8D8D;line-height: 37px;}
+.footer .footerAll .banquan a{font-size:12px;color:#B3B2B2;text-align: justify;}
+

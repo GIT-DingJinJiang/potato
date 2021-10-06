@@ -1,0 +1,34 @@
+/* header start */
+.toubu{position: fixed;top: 0;}
+.header{height: 80px;background-color: #ffffff;}
+.header .logo img{width: 120px;height: 44px;margin: 18px 0;}
+.nav {position: relative;left: 30px;}
+.nav ul li{float: left;height: 80px;line-height: 80px;margin: 0 15px;}
+.nav ul li a:hover{color:#B8860B}
+.header-righr{width: 327.98px;position: relative;}
+.header-righr .xiazai{display: block; margin-right: 20px;height: 80px;line-height: 80px;color: #684029;}
+.header-righr .erweima {width: 110px;height: 0; position: absolute;top: 70px;left: -40px;border: 8px solid #ffffff;opacity: 0;}
+.header-righr .xiazai:hover .erweima{height: 110px;opacity: 1; transition:  .7s ease-in-out;overflow: hidden;}
+.header-righr .xiazai:hover{color:#B8860B;}
+.header-righr .selt{color: #684029;font-size: 14px;position: relative;margin: 0  40px 0 0;position: relative;}
+.header-righr .selt span{line-height: 80px;}
+.header-righr .selt span a{color: #684029;}
+.header-righr .selt ul{position: absolute;width: 100px;height: 0px;text-align: center;background-color: #ffffff;left: -20px;opacity: 0;font-size: 0;overflow: hidden;top: 68px;}
+.header-righr .selt:hover ul{opacity: 1;height: 180px; transition:  .8s ease-in-out;}
+.header-righr .selt ul li{height: 14px;padding-bottom:10px;line-height: 35px;}
+.header-righr .selt ul li a{color: #BB9772;}
+.header-righr .selt ul li a:hover{color: #000;}
+.header-righr .selt span a:hover{color:#B8860B;}
+.header-righr .login  ul{position: absolute;width: 100px;height: 0px;text-align: center;background-color: #ffffff;left: -40px;opacity: 0;font-size: 0;overflow: hidden;top: 68px;line-height:10px;}
+.header-righr .login:hover ul{opacity: 1;height: 70px; transition:  .8s ease-in-out;}
+.header-righr .login  ul li{padding:11px ;}
+.header-righr .login  ul li a{color:#B8860B;}
+.header-righr .login  ul li:hover a{color: #000;}
+.logoIco{width: 25px;height: 25px;position: relative;top: 30px;}
+/* 三角形 */
+.header .selt .sanjiao{width: 0;height: 0;border-style: solid;border-width: 6px;border-color: #4C2A1C transparent transparent transparent; font-size:0;line-height: 0;position: relative;top: 39px;right: -42px;}
+.header .login{height: 80px;line-height: 80px;position: relative;}
+.header .messages{display:inline-block;width: 52px;color:#684029 ;}
+.header .messages:hover{color:#B8860B ;}
+.header .login img{position:absolute; width: 18px;height: 18px; margin: 9px 0;top:22px;right: -48px;}
+.header .login a:hover{color:#B8860B ;}

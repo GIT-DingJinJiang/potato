@@ -1,0 +1,76 @@
+/* banner start*/
+body{position: relative;}
+.banner{padding-top:80px ;}
+/* 左右按钮 */
+.banner .arrow-l, .arrow-r{opacity: 0; position: absolute;top: 50%;margin-top: 20px;width: 24px;height: 40px;background:rgba(0,0,0,.3);text-align: center;line-height: 40px;color: #fff;font-family: 'icomoon';font-size: 18px;}
+.banner .arrow-r{position: absolute;right: 0;;}
+/* banner核心滚动区域 */
+.banner{width: 100%;height: 640px;overflow: hidden;position:relative;}
+.banner ul{position:relative;width: 100%;}
+.banner ul li{position:absolute;top:0;left:0;width: 100%;z-index: -1;opacity: 0; transition: opacity 1s ease-in;}
+.banner ul .opa-on{opacity: 1;}
+.banner ul li a img{width: 100%;height: 640px;}
+/* 小圆圈 */
+.banner ol{position: absolute;left: 50%;bottom: 15px;}
+.banner ol li{width: 8px;height: 8px;border: 1px solid gray;border-radius: 100%;background-color:#ffffff;display: inline-block;margin-left: 5px;}
+.banner .on{background-color: #442818;}
+/* banner-end */
+/* nav-start */
+.nav-barAll{margin: 26px 38px 0;}
+.nav-barAll a{margin-left: 18px;}
+.nav-barAll a :hover{opacity: 1;}
+.nav-barAll a img{opacity: 0.85;box-shadow: 1px 1px 1px rgba(0,0,0,0.1);-moz-box-shadow:1px 1px 1px rgba(0,0,0,0.1);-webkit-box-shadow:1px 1px 1px rgba(0,0,0,0.1);}
+.newproductAll{margin: 5px 0 0;padding: 50px 0 0;position: relative;}
+.newproductAll .newproduct-logo h4{font-size: 26px;color: #724228;margin-bottom:20px;margin-left: 50px; line-height: 36px;}
+.newproductAll .newproduct-logo h4>:last-child{font-size: 14px;color: #8E5D43;}
+.newproductAll .newproduct-logo h4 i{font-size: 14px;color: #8E5D43;}
+.newproductAll .merchandise {display: block;text-align: center;height: 250px;}
+.newproductAll .show{margin:-100px 50px 0 ;padding-top: 100px;}
+.newproductAll .varieties{position: relative;}
+.newproductAll .varieties ul {margin: 0 auto;overflow: hidden;}
+.newproductAll .varieties ul li{float: left; width: 263px;height: 365px;margin:0 8px ;position: relative;left: 43px;}
+.newproductAll .varieties ul li:nth-last-child(1)>a>img{width: 263px;height: 230px;}
+.newproductAll .varieties ul li a {display: block;}
+.newproductAll .varieties ul li .tag a{display:inline-block;border:1px solid #D5BFA7; color:#D5BFA7;font-size: 12px;padding: 0 8px;border-radius: 100px;margin: 8px 3px;}
+.newproductAll .varieties ul li .cart{border-top:1px dashed #D5BFA7;margin-top: 6px;padding-top: 10px;}
+.newproductAll .varieties ul li .cart span{line-height: 14px;color: #BB9772;font-size: 14px;bottom: 4px;}
+.newproductAll .varieties ul li .cart a{display: inline-block;line-height: 20px;font-size: 12px;background:#643E28;color: #fff;padding: 0 10px;position: absolute;;right: 0;}
+.welt .merchandise {text-align: left;margin-left: 50px;overflow: hidden;}
+.welt .merchandise a img{width: 542px;box-shadow: 0 0 6px 0 rgba(0,0,0,0.10);border-radius: 8px;}
+.newproductAll .difference ul li a img{width: 542px;height: 252px;}
+.newproductAll .difference ul li h4{font-size: 24px;color: #000;margin-top: 14px;padding: 0 16px;text-align: left;}
+.newproductAll .difference ul li{text-align: left;box-shadow: 0 0 6px 0 rgba(0,0,0,0.10);border-radius: 8px;width: 542px;overflow: hidden;}
+.newproductAll .difference ul li span{padding: 0 16px;line-height: 22px;font-size: 14px;color:#AD814B ;}
+/* 购物车 */
+.block{display: block;transition: 1s  ;}
+.show{display: none;}
+.add{padding: 12px;background-color:#ffffff;position: absolute;bottom: 12px;display: none;overflow: hidden;}
+.newproductAll .varieties .add span{font-size: 16px;color: #684029;}
+.newproductAll .varieties .add ul {padding: 10px 0;position: relative;left: -40px;overflow: visible;width: 263px;}
+.newproductAll .varieties  .add ul li{border: 1px solid #D0C3BB;display: inline-block;font-size: 12px;width: 38px;padding: 2px 8px;height: 32px;margin:1px;}
+.newproductAll .varieties  .add ul li a{font-size: 12px;position: relative;left: 4px;}
+.newproductAll .varieties  .add ul li span{font-size: 12px;position: relative;left: 4px;}
+.newproductAll .varieties  .add .btns{position: relative;top: 15px;}
+.newproductAll .varieties  .add button{width: 114px;height: 30px;font-size: 12px;margin: 8px 0;border: 0 ;}
+.add .btnl{color:#643E28}
+.add .btnr{background-color:#684029 ;color: #ffffff;}
+.newproductAll .varieties .add ul li .gouzi{position: absolute;border: 0.5px #643E28;width: 12px;height: 12px;background-color: #643E28;top: 0;left: 0;}
+.newproductAll .varieties .add ul li .gouzi img{width: 100%;background-color: #fff;}
+.newproductAll .varieties .addcart{width: 263px; height: 137px; background-color:#ffffff;position: absolute;bottom: 0;z-index: 6;}
+.newproductAll .varieties .addcart .icon{text-align: center;padding-top:50px;padding-bottom:22px ;}
+.newproductAll .varieties .addcart .icon i{display: inline-block;width: 20px;height: 20px;background:url(../images/xuanzhong.png)no-repeat center;background-size:cover}
+.newproductAll .varieties .Thecar{display: block;text-align: center;width: 150px;height: 28px;background-color:  #684029;margin: 0 auto ;color: #ffffff;}
+/* nav-end */
+/* 侧边栏 start */
+.aside{position: absolute;left: 50%;width: 45px;top: 20%;margin-left: 600px;}
+.aside ul{position: absolute;background: #E4E8EB;}
+.aside ul li{font-size: 12px;text-align: center;height: 40px;line-height: 40px;border-bottom: 1px solid #E4E5E9;padding: 10px 8px 0;}
+.aside ul .active{background-color: #D8BFd8;}
+.aside ul li:nth-child(1)>a{color: red;}
+.aside ul li:nth-child(2)>a{color: yellow}
+.aside ul li:nth-child(3)>a{color:#A8C001;}
+.aside ul li:nth-child(4)>a{color: green;}
+.aside ul li:nth-child(5)>a{color: #724228}
+iframe{display: block;} 
+
+/* 侧边栏  end*/
