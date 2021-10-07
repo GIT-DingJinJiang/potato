@@ -20,14 +20,14 @@ for (var i = 0; i < tabAll.length; i++) {
     this.className = 'active'
     //2.6:当前的index 位置
     var index = this.getAttribute('index')
-    if(index<7){
-      tabAll[7].style.color='#BB9772'
-    }else if(index>7){
-      tabAll[7].style.color='#684029'
-      tabAll[1].className='active'
-     if(index<6){
-      tabAll[1].className=''
-     }
+    if (index < 7) {
+      tabAll[7].style.color = '#BB9772'
+    } else if (index > 7) {
+      tabAll[7].style.color = '#684029'
+      tabAll[1].className = 'active'
+      if (index < 6) {
+        tabAll[1].className = ''
+      }
     }
     //2.9:如果当前index大于1并且小于7
     if (index > 1 && index < 7) {
