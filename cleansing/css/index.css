@@ -1,0 +1,34 @@
+.container{width: 100%;}
+/* 头部 */
+.header{height: 40px;display: flex;justify-content: space-between;align-items: center;padding: 0 15px;box-sizing: border-box;}
+.header ul{display: flex;}
+.header ul li+li{margin-left: 10px;padding-left: 10px;border-left: 1px solid #666666;}
+.header ul li:last-child a{color: #005491;}
+.header ul li:last-child a:first-child{margin:0 5px;}
+.header ul li:last-child a:last-child{margin:0 5px;}
+
+/* 导航栏 */
+.nav{background-color:#225bb4 ;height: 96px;}
+.nav .list{height: 96px; display: flex;justify-content: space-between;align-items: center;padding:0 15px;box-sizing: border-box;position: relative;}
+.nav .list ul{display: flex;flex-wrap: nowrap;}
+.nav .list ul li{padding: 0 25px;border-right: 1px solid #cdc9c9;}
+.nav .list ul li:first-child a{color: #f08622}
+.nav .list ul li a{font-size: 16px;color: #ddd;transition: 1s;}
+.nav .list ul li a:hover{color: #f08622;}
+.nav .list input{width: 143px;height: 34px;border: 0;border-radius:5px 0 0 5px;outline: none;position: relative;right: -3%;top: 1%;vertical-align:top;padding: 0 10px;box-sizing: border-box;}
+.nav .list button{background:#ffffff url(http://www.yanxin-sz.com/images/fdj.png)no-repeat center;width: 47px;height: 34px;border: 0;border-radius: 0 5px 5px 0;}
+.nav .list .list_rights{display: none;}
+.nav .list .list_rights p{width: 40px;height: 4px;background: #ffffff;margin: 3px 0;}
+
+@media screen and (max-width:1200px)  {
+    .nav .list ul li{padding: 0 15px;}
+    .nav .list ul li a{font-size: 14px;}
+    .nav .list a img{width: 180px;height: 27px;}
+}
+@media screen and (max-width:981px) {
+    .header{display: none;}
+    .nav .list ul{display: none;}
+    .list_right{display: none;}
+    .nav .list .list_rights{display:block;position:fixed;right: 15px;}
+}
+/* banner */

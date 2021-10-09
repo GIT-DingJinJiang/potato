@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #ddd;
+        }
+
+        .fontSize {
+            font-size: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="continer">
+        <!-- 一：响应式屏幕字体无极变速 -->
+        <div class="fontSize">
+            <h1>一：响应式屏幕字体无极变速</h1>
+        </div>
+        <!-- 二：自适应根据终端不同显示不同页面 -->
+        <div class="device">
+            <a href="../10/move.html"></a>
+        </div>
+    </div>
+</body>
+<script>
+    // 一：响应式屏幕字体无极变速
+    var em = () => {
+        let width = document.documentElement.clientWidth;/*获取设备的宽度*/
+        // 16和640假定数据可随意更改
+        let size = (16 * (width / 640) > 40 ? 40 + "px" : (16 * (width / 640) + "px"))
+        document.documentElement.style.fontSize = size;
+    }
+    window.addEventListener("load", em);//初始化
+    window.addEventListener("resize", em)/*屏幕发生改变时调佣函数*/
+</script>
+<script>
+    // 二：自适应根据终端不同显示不同页面
+    var redirect=()=>{
+        //获取设备的信息
+        let userAgent=navigator.userAgent.toLowerCase();
+        //正则表达式，判断设备类型
+        let device=/ipad|iphone|midp|rv:1.2.3.4|ucwed|android|windwos ce|windows mobile/;
+        if(device.test(userAgent)){
+            //跳转移动端页面
+            window.location.href="../10/move.html";
+        }else{
+            window.location.href="../10/pc.html"
+        }
+    }
+    redirect();
+</script>
+
+</html>
