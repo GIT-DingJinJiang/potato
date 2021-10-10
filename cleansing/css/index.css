@@ -18,8 +18,7 @@
 .nav .list input{width: 143px;height: 34px;border: 0;border-radius:5px 0 0 5px;outline: none;position: relative;right: -3%;top: 1%;vertical-align:top;padding: 0 10px;box-sizing: border-box;}
 .nav .list button{background:#ffffff url(http://www.yanxin-sz.com/images/fdj.png)no-repeat center;width: 47px;height: 34px;border: 0;border-radius: 0 5px 5px 0;}
 .nav .list .list_rights{display: none;}
-.nav .list .list_rights p{width: 40px;height: 4px;background: #ffffff;margin: 3px 0;}
-
+.nav .list .list_rights p{width: 40px;height: 4px;background: #ffffff;margin: 3px 0;transition-duration: .5s;}
 @media screen and (max-width:1200px)  {
     .nav .list ul li{padding: 0 15px;}
     .nav .list ul li a{font-size: 14px;}
@@ -31,4 +30,14 @@
     .list_right{display: none;}
     .nav .list .list_rights{display:block;position:fixed;right: 15px;}
 }
+.active p{height: 3px;display: block;}
+.active p:nth-child(2){display: none;}
+.active p:last-child{transform: rotate(-45deg) translate(0,-10px);}
+.active p:first-child{transform: rotate(45deg) translate(-3px,5px);}
 /* banner */
+.benner{width: 300%;}
+.benner ul{display: flex;}
+.benner ul li{width: 100%;}
+.benner ul li img{width: 100%;}
+
+

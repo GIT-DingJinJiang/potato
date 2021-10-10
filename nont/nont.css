@@ -1,0 +1,62 @@
+*{margin: 10;padding: 0;}
+span{color: red;}
+a,ul{list-style: none;text-decoration: none;}
+h4,h6{text-align: center;}
+.bor{border: 1px solid #66a5ff;margin: 5px;padding: 5px;}
+body {background-color: #ddd;}
+/*  <!-- 一：响应式屏幕字体无极变速 --> */
+.fontSize {font-size: 0.5rem;padding: 10px 10px;}
+/*  <!-- 三：三大系列总结 --> */
+.ocs_width{width: 100%;}
+.ocs_width table{width: 100%;}
+.ocs_width table tr th,td{border: 1px solid #66a5ff;}
+.ocs_width table tr td{padding: 5px;}
+.ocs_width table:last-child tr td+td{color: red;}
+/* <!-- 五：动画函数封装 --> */
+/* .animation{position: relative;} */
+.animationTop{position: relative;left: 0;width: 100px;height: 100px;background-color: pink;transition:.4s ;}
+/* <!-- 六：动画函数的使用 --> */
+.sliberbar{position: relative;display: flex;text-align: center;line-height: 30px;justify-content: center;}
+.sliberbar span{width: 50px;height: 30px;background-color: #66a5ff;}
+.sliberbar div{width: 130px;height: 30px;background-color: aqua;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

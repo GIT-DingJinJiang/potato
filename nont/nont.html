@@ -6,31 +6,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {
-            background-color: #ddd;
-        }
-
-        .fontSize {
-            font-size: 0.5rem;
-        }
-    </style>
+    <link rel="stylesheet" href="./nont.css">
 </head>
 
 <body>
     <div id="continer">
         <!-- 一：响应式屏幕字体无极变速 -->
-        <div class="fontSize">
-            <h1>一：响应式屏幕字体无极变速</h1>
+        <div class="fontSize bor">
+            <h4 class="center">一：响应式屏幕字体无极变速</h4>
         </div>
         <!-- 二：自适应根据终端不同显示不同页面 -->
         <div class="device">
             <a href="../10/move.html"></a>
         </div>
+        <!-- 三：三大系列总结 -->
+        <div class="ocs_width bor">
+            <div class="bor scroll">
+                <h4>三：元素滚动scroll系列</h4>
+                <p>案例分析</p>
+                <p>1：需要用到页面滚动时间 scroll 应为是页面滚动，所以事件源是 document</p>
+                <p>2：滚动到某个位置。就是判断页面被卷去的上部值</p>
+                <p>3:<span>页面被卷去的头部：可以通过 window.pageYOffset 获得</span> 如果是被卷去的左侧 window.pageXOffset</p>
+                <p>注意，元素被卷去的头部是<span>element.scrollTop,</span>如果是页面被卷曲的头部则是 <span>window.pageYOffset</span></p>
+            </div>
+            <table class="bor">
+                <caption>
+                    <h3>三大系列总结 </h3>
+                </caption>
+                <tr>
+                    <th>三大系列大小对比</th>
+                    <th>作用</th>
+                </tr>
+                <tr>
+                    <td>element.ofset.Width</td>
+                    <td>返回自身包括padding、边框、内容区的宽度，返回数值不带单位</td>
+                </tr>
+                <tr>
+                    <td>element.clientWidth</td>
+                    <td>返回自身包括padding、内容区的宽度，不含边框，返回数值不带单位</td>
+                </tr>
+                <tr>
+                    <td>element.scrollWidth</td>
+                    <td>返回自身实际的宽度，不含边框，返回数值不带单位</td>
+                </tr>
+            </table>
+            <table class="bor">
+                <caption>主要用法</caption>
+                <tr>
+                    <td>1:offset系列经常用于获得元素位置</td>
+                    <td>offserLeft offsetTop</td>
+                </tr>
+                <tr>
+                    <td>2:client经常用于获取元素大小</td>
+                    <td>clientWidht clientHeight</td>
+                </tr>
+                <tr>
+                    <td>3：scroll经常用于获取滚动距离</td>
+                    <td>scrollTop scrollLeft</td>
+                </tr>
+            </table>
+        </div>
+        <!-- 四：mouseenter 和 mouseover 的区别 -->
+        <div class="mous bor">
+            <h4>四：mouseenter 和 mouseover 的区别</h4>
+            <p>1:当鼠标移动到元素上时就会触发 mouseenter 事件</p>
+            <p>2：类似 mouseover,它们两者之间的差别是</p>
+            <p>3：mouseover 鼠标经过自身盒子会触发，经过子盒子还会触发，mouseenter 只会经过自身盒子触发</p>
+            <p>之所以这样，就是因为 mouseenter 不会冒泡</p>
+            <p>跟 mouseenter搭配鼠标离开 mouseleave 同样不会冒泡</p>
+        </div>
+        <!-- 五：动画函数封装 -->
+        <div class="animation bor">
+            <h4>五：动画函数封装</h4>
+            <h6>5.1：动画实现原理</h6>
+            <p><span>核心原理：</span>通过定时器 setlnterval() 不断移动盒子位置</p>
+            <p>实现步骤：</p>
+            <p>1：获得盒子当前位置</p>
+            <p>2：让盒子在当前位置加上一个移动距离</p>
+            <p>3：利用定时器不断重复这个操作</p>
+            <p>4：加一个结束定时器的条件</p>
+            <p>5：注意此元素需要添加定位，才能使用 element.style.left</p>
+            <div class="animationTop">
+
+            </div>
+            <h4>5.2：动画函数封装</h4>
+            <p>注意函数需要传递两个参数， <span>动画对象</span>和 <span>移动到的距离</span></p>
+            <h4>5.3：动画函数给不同元素记录不同定时器</h4>
+            <p>如果多个元素使用这个函数，每次都要 var 生命定时器。我们可以给不同的元素使用不同的定时器（自己专门用自己的定时器）</p>
+            <p>核心原理：利用js是一门动态语言，可以很方便的给当前对象添加属性</p>
+            <h4>5.4：缓动效果原理</h4>
+            <p>缓动动画就是让元素运动速度有所变化，最常见的是让速度慢慢停下来</p>
+            <p>思路：</p>
+            <p>1：让盒子每次移动的距离慢慢变小，速度就会慢慢落下来</p>
+            <p>2：核心算法：（目标值-现在位置）/ 10 做为每次移动的距离步长</p>
+            <p>3：停止条件是：让当前盒子位置等于目标位置就停止定时器</p>
+            <h4>5.5：动画函数多个目标值之间移动</h4>
+            <p>可以让动画函数从800移动到500</p>
+            <p>当我们点击按钮时候，判断步长是正直还是负值</p>
+            <p>1：如果是正直，则步长往大了取整</p>
+            <p>2：如果是负直，则步长往小了取整</p>
+            <h4>5.6：动画函数添加回调函数</h4>
+            <p><span>回调函数原理：</span>函数可以作为一个参数。将这个函数作为参数传到另一个函数里面，当那个函数执行完之后，在执行传进去的这个函数，这个过程就叫 <span>回调。</span></p>
+        </div>
+        <!-- 六：动画函数的使用 -->
+        <div class="sliberbar">
+            <span>→</span>
+            <div class="con">问题反馈</div>
+        </div>
     </div>
 </body>
+<!-- 一：响应式屏幕字体无极变速 -->
 <script>
-    // 一：响应式屏幕字体无极变速
     var em = () => {
         let width = document.documentElement.clientWidth;/*获取设备的宽度*/
         // 16和640假定数据可随意更改
@@ -40,21 +126,77 @@
     window.addEventListener("load", em);//初始化
     window.addEventListener("resize", em)/*屏幕发生改变时调佣函数*/
 </script>
+<!-- 二：自适应根据终端不同显示不同页面 -->
 <script>
-    // 二：自适应根据终端不同显示不同页面
-    var redirect=()=>{
+    var redirect = () => {
         //获取设备的信息
-        let userAgent=navigator.userAgent.toLowerCase();
+        let userAgent = navigator.userAgent.toLowerCase();
         //正则表达式，判断设备类型
-        let device=/ipad|iphone|midp|rv:1.2.3.4|ucwed|android|windwos ce|windows mobile/;
-        if(device.test(userAgent)){
+        let device = /ipad|iphone|midp|rv:1.2.3.4|ucwed|android|windwos ce|windows mobile/;
+        if (device.test(userAgent)) {
             //跳转移动端页面
-            window.location.href="../10/move.html";
-        }else{
-            window.location.href="../10/pc.html"
+            // window.location.href="../10/move.html";
+        } else {
+            // window.location.href="../10/pc.html"
         }
     }
     redirect();
+</script>
+<!-- 五：动画函数封装 -->
+<script>
+    //1：获得盒子当前位置
+
+    // 2：让盒子在当前位置加上一个移动距离
+
+    // 3：利用定时器不断重复这个操作
+
+    // 4：加一个结束定时器的条件
+
+    // 5：注意此元素需要添加定位，才能使用 element.style.left
+    var animationTop = document.querySelector('.animationTop');
+    // var timer = setInterval(function () {
+    //     if (animationTop.offsetLeft >= 400) {
+    //         clearInterval(timer)
+    //     } else {
+    //         animationTop.style.left = animationTop.offsetLeft + 5 + 'px';
+    //     }
+    // }, 30);
+    // 2：封装 obj目标对象， target 目标位置
+    function anmiate(obj, target, callback) {
+        clearInterval(obj.timer)
+        obj.timer = setInterval(function () {
+            //步长值写到定时器里面
+            var step = (target - obj.offsetLeft) / 10;
+            step > 0 ? Math.ceil(step) : Math.floor(step)
+            if (obj.offsetLeft === target) {
+                //停止动画 本质是停止定时器
+                clearInterval(obj.timer)
+                //回调函数写到定时器结束里面
+                if(callback){
+                    //调佣函数
+                    callback()
+                }
+            }
+            //（目标值-现在位置）/ 10 做为每次移动的距离步长 step
+            obj.style.left = obj.offsetLeft + step + 'px';
+
+        }, 15);
+    }
+    //匀速动画 就是 盒子当前的位置 + 固定的值10
+    //缓动动画 就是 盒子当前位置 + 变化的值
+    var flag = true;
+    animationTop.addEventListener('click', function () {
+        if (flag) {
+            anmiate(animationTop, 200, function () {
+                animationTop.style.background="red"
+            });
+            flag = false;
+        } else {
+            anmiate(animationTop, -180);
+            flag = true
+        }
+    })
+
 </script>
 
 </html>
