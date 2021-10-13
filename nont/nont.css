@@ -16,11 +16,10 @@ body {background-color: #ddd;}
 /* .animation{position: relative;} */
 .animationTop{position: relative;left: 0;width: 100px;height: 100px;background-color: pink;transition:.4s ;}
 /* <!-- 六：动画函数的使用 --> */
-.sliberbar{position: relative;display: flex;text-align: center;line-height: 30px;justify-content: center;}
-.sliberbar span{width: 50px;height: 30px;background-color: #66a5ff;}
-.sliberbar div{width: 130px;height: 30px;background-color: aqua;}
-
-
+.anti{height: 200px;}
+.sliberbar{display: flex;text-align: center;line-height: 30px;justify-content: center;position: absolute;justify-content:flex-end;}
+.sliberbar span{width: 40px;height: 30px;background-color: #66a5ff;z-index: 1;}
+.sliberbar .con{width: 200px;height: 30px;background-color: #66a5ff;position: relative;left: -238px;}
 
 
 

@@ -13,7 +13,7 @@
 .nav .list ul{display: flex;flex-wrap: nowrap;}
 .nav .list ul li{padding: 0 25px;border-right: 1px solid #cdc9c9;}
 .nav .list ul li:first-child a{color: #f08622}
-.nav .list ul li a{font-size: 16px;color: #ddd;transition: 1s;}
+.nav .list ul li a{font-size: 16px;color: #ddd;transition: .5s;}
 .nav .list ul li a:hover{color: #f08622;}
 .nav .list input{width: 143px;height: 34px;border: 0;border-radius:5px 0 0 5px;outline: none;position: relative;right: -3%;top: 1%;vertical-align:top;padding: 0 10px;box-sizing: border-box;}
 .nav .list button{background:#ffffff url(http://www.yanxin-sz.com/images/fdj.png)no-repeat center;width: 47px;height: 34px;border: 0;border-radius: 0 5px 5px 0;}
@@ -35,9 +35,12 @@
 .active p:last-child{transform: rotate(-45deg) translate(0,-10px);}
 .active p:first-child{transform: rotate(45deg) translate(-3px,5px);}
 /* banner */
-.benner{width: 300%;}
-.benner ul{display: flex;}
-.benner ul li{width: 100%;}
-.benner ul li img{width: 100%;}
-
-
+/* 核心区域 */
+.benner{max-width: 100%;text-align: center;overflow: hidden;position: relative;max-height: 504.66px;}
+.benner ul{width: 300%;display:flex;position: relative;}
+.benner ul li{width: 100%;margin: 0 auto;}
+.benner ul li img{max-width: 100%;max-height: 504px;}
+/* 小圆圈 */
+.benner .circle{position: absolute;bottom: 4%;left: 50%;}
+.benner .circle li{width: 10px;height: 10px;float: left;margin-left: 10px;background-color: #fff;border-radius: 50%;cursor:pointer;}
+.benner .circle .current{background-color: red;}

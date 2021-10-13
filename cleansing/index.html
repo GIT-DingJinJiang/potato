@@ -8,6 +8,7 @@
     <title>言信洁净系统整体供应商</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -46,17 +47,24 @@
             </div>
         </div>
         <!-- benner -->
-        <div class="benner">
-            <ul>
-                <li><img src="./imgeas/20190401111503wrj2.jpg" alt=""></li>
-                <li><img src="./imgeas/201906160941235agh.jpg" alt=""></li>
-                <li><img src="./imgeas/20200511153436swqy.jpg" alt=""></li>
+        <div class="benner swiper-container">
+            <!-- 核心滚动区域 -->
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide"><a href=""><img src="./imgeas/201904011114339sad.jpg" alt=""></a></li>
+                <li class="swiper-slide"><a href=""><img src="./imgeas/20190401111503wrj2.jpg" alt=""></a></li>
+                <li class="swiper-slide"><a href=""><img src="./imgeas/20200511153436swqy.jpg" alt=""></a></li>
             </ul>
+            <!-- 小圆圈 -->
+            <ol class="circle swiper-pagination">
+
+            </ol>
         </div>
 
 
+    </div>
 
     </div>
 </body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
 <script src="./js/index.js"></script>
 </html>
