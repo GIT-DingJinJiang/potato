@@ -1,4 +1,5 @@
 .container{width: 100%;}
+
 /* 头部 */
 .header{height: 40px;display: flex;justify-content: space-between;align-items: center;padding: 0 15px;box-sizing: border-box;}
 .header ul{display: flex;}
@@ -23,6 +24,7 @@
     .nav .list ul li{padding: 0 15px;}
     .nav .list ul li a{font-size: 14px;}
     .nav .list a img{width: 180px;height: 27px;}
+    
 }
 @media screen and (max-width:981px) {
     .header{display: none;}
@@ -44,3 +46,59 @@
 .benner .circle{position: absolute;bottom: 4%;left: 50%;}
 .benner .circle li{width: 10px;height: 10px;float: left;margin-left: 10px;background-color: #fff;border-radius: 50%;cursor:pointer;}
 .benner .circle .current{background-color: red;}
+/* 介绍模块 */
+@media (min-width: 1186px) {
+    .introduce ul li{font-size: 20px;}
+    
+}
+
+    @media (max-width: 991px) {
+        .introduce ul li{font-size: 16px;}
+        
+    }
+
+        @media (max-width: 767px) {
+            .introduce ul li{padding: 20px 0;font-size: 12px;}
+            .introduce ul li:first-child{display: none;}
+        }
+
+        @media (max-width: 479px) {
+          
+        }
+        @media screen and (min-width:981px) {
+            .introduce ul li img:hover{transform: rotateY(360deg);}
+        }
+.introduce{max-width:1200px;height: 100%; background-color: #ddd;margin: 0 auto;padding:3.7% 0;}
+.introduce ul{width: 100%;max-height: 176px; display: flex;justify-content: space-around;}
+.introduce ul li{border-radius: 50%;background-color: #337ab7;width: 20%;padding: 5% 0;max-width: 176px;text-align: center;transition-duration: 1s;color: #fff;}
+.introduce ul li:nth-child(2){background-color: #38b0d0;}
+.introduce ul li:nth-child(3){background-color: #3eb839;}
+.introduce ul li:last-child{background-color: #f8a805;}
+.introduce ul li img{width: 27.6%;transition-duration: 1s;margin-top: -8px;}
+.introduce ul li p{margin-top: 6px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
